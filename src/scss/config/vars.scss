@@ -12,7 +12,7 @@ $container-width: 1180;
 
 // ширина контейнера с учетом padding слева и справа
 $max-width-container: $container-width + ($main-offset * 2);
-$header-height: 100;
+$header-height: 130;
 $footer-height: 200;
 
 // радиусы
@@ -24,6 +24,7 @@ $radius-6: 6px;
 $colors-white: #fff;
 $colors-black: #101010;
 $colors-accent: #ed4d1a;
+$colors-transparent: transparent;
 
 // шрифты
 $font-family: "Actay", sans-serif;

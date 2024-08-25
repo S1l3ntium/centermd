@@ -1,0 +1,33 @@
+// отступы безопасности для контейнера
+$main-offset: 15;
+
+// максимальная ширина страницы
+$max-width: 1920;
+
+// минимальная ширина телефона
+$min-width: 320;
+
+// ширина контейнера из макета
+$container-width: 1180;
+
+// ширина контейнера с учетом padding слева и справа
+$max-width-container: $container-width + ($main-offset * 2);
+$header-height: 100;
+$footer-height: 200;
+
+// радиусы
+$radius-2: 2px;
+$radius-4: 4px;
+$radius-6: 6px;
+
+// цвета
+$colors-white: #fff;
+$colors-black: #101010;
+$colors-accent: #ed4d1a;
+
+// шрифты
+$font-family: "Actay", sans-serif;
+$second-family: "Actay Wide", sans-serif;
+$third-family: "Gotham", sans-serif;
+$font3: "SF Pro Display", sans-serif;
+$font4: "SF Pro Text", sans-serif;

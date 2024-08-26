@@ -4,6 +4,8 @@
 .header {
 	z-index: 50;
 	inline-size: 100%;
+	position: absolute;
+	top: 0;
 	transition: background-color var(--bs-transition);
 	block-size: rem($header-height);
 	.header-is-sticky & {

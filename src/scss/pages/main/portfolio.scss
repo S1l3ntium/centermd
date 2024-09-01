@@ -1,0 +1,57 @@
+@import "../../config/functions";
+@import "../../config/mixins";
+
+.portfolio {
+	padding-block: rem(60);
+	background: $colors-white-main url(../../images/backgrounds/main-portfolio.png) no-repeat;
+	background-position: bottom right;
+	width: 100%;
+
+	// .footer__container
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-end;
+		gap: rem(75);
+		height: 100%;
+	}
+
+	&__title {
+		font-family: $second-family;
+		font-weight: 700;
+		font-size: 48px;
+		line-height: 120%;
+		text-align: center;
+		color: $colors-black;
+	}
+
+	&__cards {
+		width: 100%;
+		display: flex;
+		align-items: stretch;
+		justify-content: stretch;
+		flex-wrap: wrap;
+		gap: rem(20);
+		flex-direction: row;
+	}
+
+	&__card {
+		flex: 1 1 calc((100% / 4) - rem(20));
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		flex-direction: column;
+		padding: rem(20);
+		gap: rem(12);
+		max-height: 396px;
+		height: 100%;
+
+		background: $colors-white;
+		border-radius: $radius-4;
+
+		&-img {
+			height: 240px;
+		}
+	}
+}

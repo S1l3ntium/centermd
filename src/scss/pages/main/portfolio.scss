@@ -7,7 +7,6 @@
 	background-position: bottom right;
 	width: 100%;
 
-	// .footer__container
 	&__container {
 		display: flex;
 		flex-direction: column;
@@ -34,6 +33,30 @@
 		flex-wrap: wrap;
 		gap: rem(20);
 		flex-direction: row;
+
+		&-more {
+			position: relative;
+			cursor: pointer;
+			span {
+				font-family: $font-family;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 100%;
+				color: $colors-black;
+				padding-left: rem(26);
+			}
+			&::after {
+				content: "";
+				width: 12px;
+				height: 6px;
+				background: url(../../../images/icons/portfolio-arrow.svg) no-repeat;
+				position: absolute;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+			}
+		}
 	}
 
 	&__card {
@@ -44,14 +67,32 @@
 		flex-direction: column;
 		padding: rem(20);
 		gap: rem(12);
-		max-height: 396px;
-		height: 100%;
-
+		min-height: 396px;
 		background: $colors-white;
 		border-radius: $radius-4;
 
 		&-img {
 			height: 240px;
+		}
+
+		&-title {
+			font-family: $second-family;
+			font-weight: 700;
+			font-size: 22px;
+			line-height: 120%;
+			text-align: center;
+			color: $colors-black;
+			min-height: 52.8px;
+		}
+
+		&-material,
+		&-type {
+			font-family: $font-family;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 120%;
+			text-align: center;
+			color: $colors-black;
 		}
 	}
 }

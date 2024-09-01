@@ -1,51 +1,42 @@
-<section class="hero">
-	<div class="hero__container">
-		<div class="hero__item">
-			<h1 class="hero__title">Металлообработка <br />деталей по чертежам</h1>
-			<div class="hero__buttons">
-				<button class="hero__buttons-item order">
-					<img src="../images/icons/phone.svg" alt="Заказать расчет" />
-					<span>Заказать расчет</span>
-				</button>
-				<button class="hero__buttons-item details">Узнать подробнее</button>
-			</div>
+<section class="feedback-form">
+	<div class="feedback-form__container">
+		<div class="feedback-form__header">
+			<h1 class="feedback-form__title">Заказать расчет</h1>
+			<h2 class="feedback-form__title-sub">Звоните и обращайтесь - наш опыт будет полезен</h2>
 		</div>
-		<div class="hero__item">
-			<div class="hero__areas">
-				<p class="hero__areas-title">Сферы, в которых мы работаем</p>
-				<div class="hero__areas-items">
-					<div class="hero__areas-item">
-						<div class="hero__areas-item-icon">
-							<img src="../../images/icons/oil.svg" alt="Металлообработка" />
-						</div>
-						<p class="hero__areas-item-description">Металлообработка</p>
-					</div>
-					<div class="hero__areas-item">
-						<div class="hero__areas-item-icon">
-							<img src="../../images/icons/oil.svg" alt="Нефтегазовая промышленность" />
-						</div>
-						<p class="hero__areas-item-description">Нефтегазовая промышленность</p>
-					</div>
-					<div class="hero__areas-item">
-						<div class="hero__areas-item-icon">
-							<img src="../../images/icons/aero.svg" alt="Аэрокосмическая отрасль" />
-						</div>
-						<p class="hero__areas-item-description">Аэрокосмическая отрасль</p>
-					</div>
-					<div class="hero__areas-item">
-						<div class="hero__areas-item-icon">
-							<img src="../../images/icons/medicine.svg" alt="Медицина" />
-						</div>
-						<p class="hero__areas-item-description">Медицина</p>
-					</div>
-					<div class="hero__areas-item">
-						<div class="hero__areas-item-icon">
-							<img src="../../images/icons/instrumentation.svg" alt="Приборостроение" />
-						</div>
-						<p class="hero__areas-item-description">Приборостроение</p>
-					</div>
+
+		<form class="feedback-form__form" action="" method="post">
+			<div class="feedback-form__form-items">
+				<div class="feedback-form__form-item">
+					<label for="type" class="feedback-form__form-item-label">Кто вы?</label>
+					<select class="feedback-form__form-item-input" name="type" id="type" required>
+						<option value="" disabled hidden selected>Выберите тип</option>
+						<option value="organization">Юридическое лицо</option>
+						<option value="personal">Физическое лицо</option>
+					</select>
+				</div>
+				<div class="feedback-form__form-item">
+					<label for="name" class="feedback-form__form-item-label">Ваше имя</label>
+					<input type="text" class="feedback-form__form-item-input" name="name" id="name" placeholder="Иван" />
+				</div>
+				<div class="feedback-form__form-item">
+					<label for="email" class="feedback-form__form-item-label">Ваш e-mail</label>
+					<input type="email" class="feedback-form__form-item-input" name="email" id="email" placeholder="example@example.ru" />
+				</div>
+				<div class="feedback-form__form-item">
+					<label for="phone" class="feedback-form__form-item-label">Ваш телефон</label>
+					<input type="text" class="feedback-form__form-item-input" name="phone" id="phone" placeholder="+7 (999) 999-99-99" />
+				</div>
+				<div class="feedback-form__form-item">
+					<label for="description" class="feedback-form__form-item-label">Немного про ваш проект</label>
+					<textarea
+						class="feedback-form__form-item-input"
+						name="description"
+						id="description"
+						placeholder="Например: Металлообработка сложного профиля"
+					></textarea>
 				</div>
 			</div>
-		</div>
+		</form>
 	</div>
 </section>

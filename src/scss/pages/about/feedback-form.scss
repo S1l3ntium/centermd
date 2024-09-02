@@ -1,0 +1,94 @@
+@import "../../config/functions";
+@import "../../config/mixins";
+
+.feedback-form {
+	padding-block: rem(60);
+	background: $colors-white-main url(../../../images/backgrounds/main-feedback-form.png) no-repeat bottom left;
+	background-size: contain;
+	width: 100%;
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-end;
+		gap: rem(100);
+		height: 100%;
+	}
+
+	&__header {
+		display: flex;
+		gap: rem(30);
+		flex-direction: column;
+	}
+
+	&__title {
+		font-family: $second-family;
+		font-weight: 700;
+		font-size: 48px;
+		line-height: 100%;
+		text-align: center;
+		color: $colors-black;
+
+		&-sub {
+			font-family: $font-family;
+			font-weight: 400;
+			font-size: 24px;
+			line-height: 100%;
+			text-align: center;
+			color: $colors-black;
+		}
+	}
+
+	&__form {
+		width: 50%;
+		margin-left: auto;
+		&-items {
+			display: flex;
+			gap: rem(40);
+			flex-direction: column;
+		}
+		&-item {
+			display: flex;
+			gap: rem(20);
+			flex-direction: column;
+
+			&-label {
+				font-family: $second-family;
+				font-weight: 700;
+				font-size: 20px;
+				line-height: 100%;
+				color: $colors-black;
+			}
+			&-input {
+				padding: rem(10);
+				font-family: $font-family;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 100%;
+				color: $colors-black;
+				border-bottom: 2px solid #10101020;
+
+				background: $colors-white-main;
+
+				&::placeholder {
+					opacity: 0.2;
+				}
+
+				option[value=""][hidden] {
+					display: none;
+				}
+
+				&:required:invalid {
+					opacity: 0.2;
+					border-bottom: 2px solid #101020;
+				}
+
+				&:not(:placeholder-shown) {
+					opacity: 1;
+					border-bottom: 2px solid $colors-accent;
+				}
+			}
+		}
+	}
+}

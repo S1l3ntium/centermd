@@ -52,6 +52,8 @@
 @import "components/footer";
 @import "components/animated-border";
 
+// Главная
+
 @import "pages/main/hero";
 @import "pages/main/stroke";
 @import "pages/main/services";
@@ -60,3 +62,14 @@
 @import "pages/main/benefits";
 @import "pages/main/portfolio";
 @import "pages/main/feedback-form";
+
+// О компании
+
+@import "pages/about/hero";
+@import "pages/about/stroke";
+@import "pages/about/about-us";
+@import "pages/about/services";
+@import "pages/about/feedback";
+@import "pages/about/partners";
+@import "pages/about/map";
+@import "pages/about/feedback-form";

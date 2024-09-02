@@ -1,0 +1,42 @@
+.animated {
+	&-border {
+		position: relative;
+		display: inline-block;
+		padding-bottom: 5px;
+		cursor: pointer;
+	}
+
+	&-border-1 {
+		position: relative;
+		display: inline-block;
+		padding-bottom: 4px;
+		cursor: pointer;
+	}
+
+	&-border::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 0;
+		height: 2px;
+		background-color: $colors-accent; /* Цвет линии */
+		transition: width 0.3s ease; /* Плавный переход */
+	}
+
+	&-border-1::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 0;
+		height: 1px;
+		background-color: $colors-accent; /* Цвет линии */
+		transition: width 0.3s ease; /* Плавный переход */
+	}
+
+	&-border:hover::before,
+	&-border-1:hover::before {
+		width: 100%; /* Ширина линии при наведении */
+	}
+}

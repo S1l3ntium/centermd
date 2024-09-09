@@ -110,6 +110,20 @@
 				align-items: center;
 				justify-content: center;
 				gap: rem(10);
+				transition: all 0.3s ease-in-out;
+				&:hover {
+					span {
+						color: $colors-accent;
+					}
+
+					svg {
+						path {
+							fill: $colors-accent;
+						}
+					}
+
+					background: $colors-white;
+				}
 
 				span {
 					font-family: $font-family;

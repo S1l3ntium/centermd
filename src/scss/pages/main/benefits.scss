@@ -3,7 +3,9 @@
 
 .benefits {
 	padding-block: rem(60) rem(30);
-	background: $colors-white-main url(../../images/backgrounds/main-benefits.png) no-repeat;
+	background-color: $colors-white-main;
+	background-image: url(@img/backgrounds/main-benefits.png);
+	background-repeat: no-repeat;
 	background-size: 8%;
 	background-position: left top rem(60);
 	width: 100%;

@@ -3,8 +3,11 @@
 
 .feedback-form {
 	padding-block: rem(60);
-	background: $colors-white-main url(../../../images/backgrounds/main-feedback-form.png) no-repeat bottom left;
+	background-color: $colors-white-main;
+	background-image: url(@img/backgrounds/main-feedback-form.png);
 	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom left;
 	width: 100%;
 
 	&__container {

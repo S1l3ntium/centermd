@@ -3,7 +3,9 @@
 
 .portfolio {
 	padding-block: rem(60);
-	background: $colors-white-main url(../../images/backgrounds/main-portfolio.png) no-repeat;
+	background-color: $colors-white-main;
+	background-image: url(@img/backgrounds/main-portfolio.png);
+	background-repeat: no-repeat;
 	background-position: bottom right;
 	width: 100%;
 
@@ -49,7 +51,7 @@
 				content: "";
 				width: 12px;
 				height: 6px;
-				background: url(../../../images/icons/portfolio-arrow.svg) no-repeat;
+				background-image: url(@img/icons/portfolio-arrow.svg) no-repeat;
 				position: absolute;
 				left: 0;
 				top: 0;

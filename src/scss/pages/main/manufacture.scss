@@ -3,7 +3,9 @@
 
 .manufacture {
 	padding-block: rem(80) rem(60);
-	background: $colors-white-main url(../../images/backgrounds/main-manufacture.svg) no-repeat center;
+	background-color: $colors-white-main;
+	background-image: url(@img/backgrounds/main-manufacture.svg);
+	background-repeat: no-repeat;
 	background-position: left top;
 	background-size: contain;
 	width: 100%;

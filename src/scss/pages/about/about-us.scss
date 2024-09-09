@@ -3,7 +3,10 @@
 
 .about-us {
 	padding-block: rem(60);
-	background: $colors-white-main url(../../../images/backgrounds/about-left.png) left no-repeat;
+	background-color: $colors-white-main;
+	background-image: url(@img/backgrounds/about-left.png);
+	background-position: left;
+	background-repeat: no-repeat;
 	width: 100%;
 
 	&__container {

@@ -3,7 +3,8 @@
 
 .hero {
 	padding-block: rem($header-height) rem(55);
-	background: url(../../images/backgrounds/main-hero.jpg) no-repeat center;
+	background-image: url(@img/backgrounds/main-hero.jpg);
+	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top;
 	width: 100%;

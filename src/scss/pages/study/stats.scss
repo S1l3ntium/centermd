@@ -1,0 +1,54 @@
+@import "../../config/functions";
+@import "../../config/mixins";
+
+.stats {
+	padding-block: rem(60);
+	background-color: $colors-accent;
+	background-image: url(@img/backgrounds/main-feedback.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+
+	&__container {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		height: 100%;
+	}
+
+	&__items {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		gap: rem(60);
+	}
+
+	&__item {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: rem(20);
+
+		&-title {
+			font-family: $second-family;
+			font-weight: 700;
+			font-size: 64px;
+			line-height: 120%;
+			color: $colors-white;
+		}
+
+		&-desc {
+			font-family: $font-family;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 120%;
+			color: $colors-white;
+			text-align: center;
+		}
+	}
+}

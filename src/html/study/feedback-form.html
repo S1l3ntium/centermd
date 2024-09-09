@@ -17,15 +17,29 @@
 				</div>
 				<div class="feedback-form__form-item">
 					<label for="name" class="feedback-form__form-item-label">Ваше имя</label>
-					<input type="text" class="feedback-form__form-item-input" name="name" id="name" placeholder="Иван" />
+					<input type="text" class="feedback-form__form-item-input" name="name" id="name" placeholder="Иван" required />
 				</div>
 				<div class="feedback-form__form-item">
 					<label for="email" class="feedback-form__form-item-label">Ваш e-mail</label>
-					<input type="email" class="feedback-form__form-item-input" name="email" id="email" placeholder="example@example.ru" />
+					<input
+						type="email"
+						class="feedback-form__form-item-input"
+						name="email"
+						id="email"
+						placeholder="example@example.ru"
+						required
+					/>
 				</div>
 				<div class="feedback-form__form-item">
 					<label for="phone" class="feedback-form__form-item-label">Ваш телефон</label>
-					<input type="text" class="feedback-form__form-item-input" name="phone" id="phone" placeholder="+7 (999) 999-99-99" />
+					<input
+						type="text"
+						class="feedback-form__form-item-input"
+						name="phone"
+						id="phone"
+						placeholder="+7 (999) 999-99-99"
+						required
+					/>
 				</div>
 				<div class="feedback-form__form-item">
 					<label for="description" class="feedback-form__form-item-label">Немного про ваш проект</label>
@@ -35,6 +49,13 @@
 						id="description"
 						placeholder="Например: Металлообработка сложного профиля"
 					></textarea>
+				</div>
+				<div class="feedback-form__form-item checkbox">
+					<input type="checkbox" name="accept" id="accept" required />
+					<label for="accept">Принимаю условия политики конфиденциальности</label>
+				</div>
+				<div class="feedback-form__form-item">
+					<input type="submit" value="" />
 				</div>
 			</div>
 		</form>

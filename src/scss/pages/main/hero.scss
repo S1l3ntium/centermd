@@ -47,6 +47,7 @@
 			line-height: 120%;
 			color: $colors-white;
 			border-radius: 2px;
+			transition: all 0.3s ease-in-out;
 
 			&.order {
 				padding: 20px;
@@ -60,6 +61,23 @@
 				border: 2px solid $colors-white;
 				border-radius: $radius-2;
 				padding: 20px;
+			}
+
+			&:hover {
+				color: $colors-accent;
+				background: $colors-white;
+
+				span {
+					color: $colors-accent;
+				}
+
+				svg {
+					path {
+						fill: $colors-accent;
+					}
+				}
+
+				background: $colors-white;
 			}
 		}
 	}

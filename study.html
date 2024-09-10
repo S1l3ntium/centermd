@@ -8,9 +8,9 @@
   <title>Центр металлообработки деталей | Обучение</title>
 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/main.min.css?_v=20240909234549">
+  <link rel="stylesheet" href="css/main.min.css?_v=20240910123218">
 
-  <script defer="defer" src="js/main.min.js?_v=20240909234549"></script>
+  <script defer="defer" src="js/main.min.js?_v=20240910123218"></script>
 </head>
 
 	<body>
@@ -105,16 +105,12 @@
 			</div>
 			<div class="about-us__item">
 				<p>
-					Мы являемся высокотехнологичным предприятием, работающим на рынке оказания услуг по производству деталей. В процессе
-					работы нами освоено и внедрено в производство более 1100 наименований деталей и мы постоянно расширяем номенклатуру
-					выпускаемой продукции.
+					Наше предприятие проводит подготовку студентов технических ВУЗов, осуществляет повышение квалификации и подготовку
+					специалистов предприятий по конструкторско-технологической подготовке производства, а также по наладке и эксплуатации
+					станков с ЧПУ.
 				</p>
 				<br>
-				<p>
-					На нашем оборудовании мы осуществляем изготовление деталей различной сложности, из различных цветных титановых сплавов,
-					нержавеющих, конструкционных и инструментальных сталей. Причем, это могут быть как единичные изделия, так и партии
-					деталей до нескольких десятков тысяч штук.
-				</p>
+				<p>По окончании обучения выдается документ: свидетельство или удостоверение.</p>
 			</div>
 		</div>
 	</div>
@@ -164,7 +160,25 @@
 		</div>
 	</div>
 </section>
- 
+ <section class="stats">
+	<div class="stats__container">
+		<div class="stats__items">
+			<div class="stats__item">
+				<p class="stats__item-title">853</p>
+				<p class="stats__item-desc">Обученных специалистов по различным специальностям</p>
+			</div>
+			<div class="stats__item">
+				<p class="stats__item-title">9 мес.</p>
+				<p class="stats__item-desc">Проходит обучение по специальностям</p>
+			</div>
+			<div class="stats__item">
+				<p class="stats__item-title">50 тыс.</p>
+				<p class="stats__item-desc">Стартовая зарплата специалистов после наших курсов</p>
+			</div>
+		</div>
+	</div>
+</section>
+
 				 <section class="feedback-form">
 	<div class="feedback-form__container">
 		<div class="feedback-form__header">
@@ -184,19 +198,26 @@
 				</div>
 				<div class="feedback-form__form-item">
 					<label for="name" class="feedback-form__form-item-label">Ваше имя</label>
-					<input type="text" class="feedback-form__form-item-input" name="name" id="name" placeholder="Иван">
+					<input type="text" class="feedback-form__form-item-input" name="name" id="name" placeholder="Иван" required>
 				</div>
 				<div class="feedback-form__form-item">
 					<label for="email" class="feedback-form__form-item-label">Ваш e-mail</label>
-					<input type="email" class="feedback-form__form-item-input" name="email" id="email" placeholder="example@example.ru">
+					<input type="email" class="feedback-form__form-item-input" name="email" id="email" placeholder="example@example.ru" required>
 				</div>
 				<div class="feedback-form__form-item">
 					<label for="phone" class="feedback-form__form-item-label">Ваш телефон</label>
-					<input type="text" class="feedback-form__form-item-input" name="phone" id="phone" placeholder="+7 (999) 999-99-99">
+					<input type="text" class="feedback-form__form-item-input" name="phone" id="phone" placeholder="+7 (999) 999-99-99" required>
 				</div>
 				<div class="feedback-form__form-item">
 					<label for="description" class="feedback-form__form-item-label">Немного про ваш проект</label>
 					<textarea class="feedback-form__form-item-input" name="description" id="description" placeholder="Например: Металлообработка сложного профиля"></textarea>
+				</div>
+				<div class="feedback-form__form-item checkbox">
+					<input type="checkbox" name="accept" id="accept" required>
+					<label for="accept">Принимаю условия политики конфиденциальности</label>
+				</div>
+				<div class="feedback-form__form-item">
+					<input type="submit" value="">
 				</div>
 			</div>
 		</form>

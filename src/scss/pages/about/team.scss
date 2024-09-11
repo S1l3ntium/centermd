@@ -124,7 +124,8 @@
 				content: "";
 				width: 12px;
 				height: 6px;
-				background-image: url(@img/icons/portfolio-arrow.svg) no-repeat;
+				background-image: url(@img/icons/portfolio-arrow.svg);
+				background-repeat: no-repeat;
 				position: absolute;
 				left: 0;
 				top: 0;

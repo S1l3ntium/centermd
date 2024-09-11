@@ -5,9 +5,9 @@
 	padding-block: rem(60);
 	background-color: $colors-white-main;
 	background-image: url(@img/backgrounds/main-feedback-form.png);
-	background-size: contain;
-	background-repeat: no-repeat;
 	background-position: bottom left;
+	background-repeat: no-repeat;
+	background-size: contain;
 	width: 100%;
 
 	&__container {
@@ -74,6 +74,8 @@
 
 				background: $colors-white-main;
 
+				transition: all 0.3s ease-in-out;
+
 				&::placeholder {
 					opacity: 0.2;
 				}
@@ -90,6 +92,108 @@
 				&:not(:placeholder-shown) {
 					opacity: 1;
 					border-bottom: 2px solid $colors-accent;
+				}
+			}
+
+			&.checkbox {
+				display: flex;
+				flex-direction: row;
+				gap: rem(10);
+
+				.accept-checkbox {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					gap: rem(10);
+					height: 100%;
+					min-height: 20px;
+					position: relative;
+					padding-left: 30px;
+					cursor: pointer;
+					user-select: none;
+
+					input {
+						position: absolute;
+						opacity: 0;
+						cursor: pointer;
+						height: 0;
+						width: 0;
+
+						&:checked ~ .accept-checkbox__checkmark {
+							background-color: $colors-accent;
+						}
+
+						&:checked ~ .accept-checkbox__checkmark:after {
+							opacity: 1;
+						}
+
+						&:hover {
+							input {
+								& ~ .accept-checkbox__checkmark {
+									background-color: $colors-white-main;
+								}
+
+								&:checked ~ .accept-checkbox__checkmark {
+									background-color: $colors-accent;
+								}
+							}
+						}
+					}
+
+					.accept-checkbox__checkmark {
+						position: absolute;
+						top: 2px;
+						left: 0;
+						height: 20px;
+						width: 20px;
+						background-color: #eee;
+						transition: background-color 0.25s ease;
+						border-radius: 4px;
+
+						&:after {
+							content: "";
+							position: absolute;
+							left: 8px;
+							top: 4px;
+							width: 5px;
+							height: 10px;
+							border: solid $colors-white;
+							border-width: 0 2px 2px 0;
+							transform: rotate(45deg);
+							opacity: 0;
+							transition: opacity 0.25s ease;
+						}
+					}
+					.accept-checkbox__body {
+						font-family: $third-family;
+						font-weight: 400;
+						font-size: 14px;
+						line-height: 100%;
+						color: $colors-black;
+					}
+				}
+			}
+
+			&.button {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				button {
+					font-family: $font-family;
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 120%;
+					color: $colors-white;
+					border-radius: 2px;
+					transition: all 0.3s ease-in-out;
+					width: fit-content;
+					padding: 20px;
+					background: $colors-accent;
+					display: flex;
+					gap: rem(10);
+					align-items: center;
+					justify-content: center;
 				}
 			}
 		}

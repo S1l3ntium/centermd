@@ -53,7 +53,8 @@
 				margin: auto;
 				width: rem(100);
 				height: rem(30);
-				background-image: url(@img/icons/feedback-arrow.svg) no-repeat;
+				background-image: url(@img/icons/feedback-arrow.svg);
+				background-repeat: no-repeat;
 				background-size: contain;
 			}
 		}

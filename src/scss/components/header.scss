@@ -46,6 +46,10 @@
 				color: $colors-white;
 				opacity: 0.5;
 			}
+
+			@include media-mx(767) {
+				display: none;
+			}
 		}
 
 		&.main {
@@ -87,10 +91,18 @@
 		align-items: center;
 		justify-content: center;
 		background: $colors-transparent;
+
+		@include media-mx(767) {
+			background: $colors-black;
+		}
 	}
 
 	&__menu {
 		display: flex;
+
+		@include media-mx(767) {
+			display: none;
+		}
 	}
 
 	.menu {
@@ -140,57 +152,55 @@
 
 // Burger
 
-/*
 .icon-menu {
-  display: none;
+	display: none;
 
-  @include media-mx(768) {
-    display: block;
-    position: relative;
-    width: rem(30);
-    height: rem(18);
-    cursor: pointer;
-    z-index: 5;
+	@include media-mx(768) {
+		display: block;
+		position: relative;
+		width: rem(30);
+		height: rem(18);
+		cursor: pointer;
+		z-index: 5;
 
-    span,
-    &::before,
-    &::after {
-      content: "";
-      transition: all 300ms ease 0ms;
-      right: 0;
-      position: absolute;
-      width: 100%;
-      height: rem(2);
-      background-color: #000;
-    }
+		span,
+		&::before,
+		&::after {
+			content: "";
+			transition: all 300ms ease 0ms;
+			right: 0;
+			position: absolute;
+			width: 100%;
+			height: rem(2);
+			background-color: $colors-white;
+		}
 
-    &::before {
-      top: 0;
-    }
+		&::before {
+			top: 0;
+		}
 
-    &::after {
-      bottom: 0;
-    }
+		&::after {
+			bottom: 0;
+		}
 
-    span {
-      top: calc(50% - rem(1));
-    }
+		span {
+			top: calc(50% - rem(1));
+		}
 
-    .menu-open & {
-      span {
-        width: 0;
-      }
+		.menu-open & {
+			span {
+				width: 0;
+			}
 
-      &::before {
-        top: calc(50% - rem(1));
-        transform: rotate(-45deg);
-      }
+			&::before {
+				top: calc(50% - rem(1));
+				transform: rotate(-45deg);
+			}
 
-      &::after {
-        bottom: calc(50% - rem(1));
-        transform: rotate(45deg);
-      }
-    }
-  }
+			&::after {
+				bottom: calc(50% - rem(1));
+				transform: rotate(45deg);
+			}
+		}
+	}
 }
-*/

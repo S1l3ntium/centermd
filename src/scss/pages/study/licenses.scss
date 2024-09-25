@@ -1,0 +1,62 @@
+@import "../../config/functions";
+@import "../../config/mixins";
+
+.licenses {
+	padding-block: rem(60);
+	background-color: $colors-white-main;
+	background-image: url(@img/backgrounds/study-licenses.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 100%;
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-end;
+		gap: rem(75);
+		height: 100%;
+	}
+
+	&__title {
+		font-family: $second-family;
+		font-weight: 700;
+		font-size: 48px;
+		line-height: 120%;
+		text-align: center;
+		color: $colors-black;
+	}
+
+	&__items {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		gap: rem(20);
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		gap: rem(20);
+		flex: 1 1 calc((100% / 4) - rem(20));
+		height: 410px;
+		&-img {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			height: 100%;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+			}
+		}
+	}
+}

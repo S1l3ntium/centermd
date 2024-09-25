@@ -11,10 +11,26 @@
 		align-items: stretch;
 		gap: rem(20);
 
+		@include media-mx(767) {
+			gap: rem(30);
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+
 		&-item {
 			width: 100%;
 			height: 100%;
 			padding: 0;
+
+			@include media-mx(767) {
+				&:first-child {
+					flex: 1 1 100%;
+				}
+				&:not(:first-child) {
+					flex: 1 1 calc(50% - rem(30));
+				}
+			}
+
 			&.links {
 				a {
 					text-decoration: none;

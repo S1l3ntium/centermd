@@ -10,11 +10,11 @@
 // import AOS from 'aos'
 // import Swiper, { Navigation, Pagination } from 'swiper';
 
-import { BaseHelpers } from './helpers/base-helpers';
-import { PopupManager } from './modules/popup-manager';
-import { BurgerMenu } from './modules/burger-menu';
-import { Tabs } from './modules/tabs';
-import { Accordion } from './modules/accordion';
+import { BaseHelpers } from "./helpers/base-helpers";
+// import { PopupManager } from './modules/popup-manager';
+import { BurgerMenu } from "./modules/burger-menu";
+// import { Tabs } from './modules/tabs';
+// import { Accordion } from './modules/accordion';
 
 BaseHelpers.checkWebpSupport();
 
@@ -35,7 +35,7 @@ BaseHelpers.headerFixed();
  * На обертку(.popup) окна добавь атрибут '[data-close-overlay]'
  * На кнопку для закрытия окна добавь класс '.button-close'
  * */
-new PopupManager();
+// new PopupManager();
 
 /**
  *  Модуль для работы с меню (Бургер)
@@ -53,14 +53,14 @@ new BurgerMenu().init();
  * */
 // new MousePRLX();
 
-new Tabs('tabs-example', {
-	onChange: (data) => {
-		console.log(data);
-	},
-});
+// new Tabs('tabs-example', {
+// 	onChange: (data) => {
+// 		console.log(data);
+// 	},
+// });
 
-new Accordion('.accordion', {
-	shouldOpenAll: false, // true
-	defaultOpen: [], // [0,1]
-	collapsedClass: 'open',
-});
+// new Accordion('.accordion', {
+// 	shouldOpenAll: false, // true
+// 	defaultOpen: [], // [0,1]
+// 	collapsedClass: 'open',
+// });

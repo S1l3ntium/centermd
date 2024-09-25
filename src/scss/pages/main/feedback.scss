@@ -16,6 +16,13 @@
 		align-items: center;
 		justify-content: space-between;
 		height: 100%;
+
+		@include media-mx(767) {
+			gap: rem(50);
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
 	}
 
 	&__item {
@@ -33,6 +40,13 @@
 		&:last-child {
 			flex: 1 1 35%;
 			align-items: flex-end;
+		}
+
+		@include media-mx(767) {
+			&:first-child,
+			&:last-child {
+				flex: 1 1 100%;
+			}
 		}
 
 		&-title {
@@ -78,6 +92,10 @@
 			font-size: 14px;
 			line-height: 100%;
 			color: $colors-accent;
+
+			@include media-mx(767) {
+				width: 100%;
+			}
 		}
 	}
 }

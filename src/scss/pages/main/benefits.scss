@@ -35,6 +35,11 @@
 		gap: rem(20);
 		align-items: center;
 		justify-content: space-between;
+
+		@include media-mx(767) {
+			flex-wrap: wrap;
+			gap: rem(30);
+		}
 	}
 
 	&__item {
@@ -44,6 +49,11 @@
 		flex-direction: column;
 		gap: rem(20);
 		flex: 1 1 25%;
+
+		@include media-mx(767) {
+			flex: 1 1 calc(50% - rem(30));
+		}
+
 		&-icon {
 			display: flex;
 			align-items: center;

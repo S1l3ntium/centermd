@@ -115,6 +115,10 @@
 			backdrop-filter: blur(7.300000190734863px);
 			background: rgba(55, 55, 54, 0.7);
 
+			@include media-mx(991) {
+				flex: 1 0 calc(20% - rem(25));
+			}
+
 			p {
 				font-family: $second-family;
 				font-weight: 700;

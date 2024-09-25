@@ -10,6 +10,14 @@
 	background-size: contain;
 	width: 100%;
 
+	@include media-mx(1199) {
+		background-size: 50%;
+	}
+
+	@include media-mx(767) {
+		background-image: none;
+	}
+
 	&__container {
 		display: flex;
 		flex-direction: column;
@@ -46,6 +54,11 @@
 	&__form {
 		width: 50%;
 		margin-left: auto;
+
+		@include media-mx(767) {
+			width: 100%;
+		}
+
 		&-items {
 			display: flex;
 			gap: rem(40);

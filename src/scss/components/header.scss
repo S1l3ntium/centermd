@@ -62,7 +62,7 @@
 				a {
 					text-decoration: none;
 					color: $colors-white;
-					font-size: 12px;
+					font-size: 14px;
 					line-height: 120%;
 				}
 			}
@@ -113,6 +113,9 @@
 			gap: rem(50);
 		}
 		&__item {
+			height: 100%;
+			display: flex;
+			align-items: center;
 			button {
 				border-radius: $radius-2;
 				padding: 20px;

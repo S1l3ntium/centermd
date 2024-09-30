@@ -3,10 +3,12 @@
 
 .hero {
 	padding-block: rem($header-height) rem(55);
-	background-image: url(@img/backgrounds/about-hero.png);
+	background-color: $colors-bg-overlay;
+	background-image: url(@img/all/IMG_4865.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top;
+	background-blend-mode: overlay;
 	width: 100%;
 	height: 100dvh;
 	display: flex;

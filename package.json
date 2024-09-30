@@ -78,6 +78,7 @@
 	},
 	"dependencies": {
 		"aos": "^2.3.4",
+		"mozjpeg": "^8.0.0",
 		"swiper": "^8.4.5"
 	}
 }

@@ -14,6 +14,38 @@
 	display: flex;
 	align-items: flex-end;
 
+	position: relative;
+
+	&::after {
+		position: absolute;
+		content: "";
+		width: 100%;
+		height: 20dvh;
+
+		background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, $colors-black 100%);
+		opacity: 0.91;
+
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 0;
+	}
+
+	&::before {
+		position: absolute;
+		content: "";
+		width: 100%;
+		height: 20dvh;
+
+		background: linear-gradient(360deg, rgba(0, 0, 0, 0) 0%, $colors-black 100%);
+		opacity: 0.91;
+
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 0;
+	}
+
 	&__container {
 		display: flex;
 		align-items: flex-end;
@@ -49,6 +81,8 @@
 		justify-content: flex-end;
 		gap: rem(30);
 		transition: all 0.3s ease-in-out;
+
+		z-index: 1;
 
 		&:first-child {
 			flex: 1 0 calc(65% - rem(60));

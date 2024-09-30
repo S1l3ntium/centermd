@@ -81,7 +81,10 @@
 			color: $colors-white;
 		}
 
-		button {
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			border-radius: $radius-2;
 			padding: 20px;
 			width: 280px;
@@ -92,6 +95,12 @@
 			font-size: 14px;
 			line-height: 100%;
 			color: $colors-accent;
+			transition: var(--bs-transition);
+
+			&:hover {
+				color: $colors-white;
+				background: $colors-accent;
+			}
 
 			@include media-mx(767) {
 				width: 100%;

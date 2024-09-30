@@ -74,6 +74,13 @@
 		background: $colors-white;
 		border-radius: $radius-4;
 
+		transition: var(--bs-transition);
+		outline: 1px solid $colors-white;
+
+		&:hover {
+			outline: 1px solid $colors-accent;
+		}
+
 		&-img {
 			height: 240px;
 		}

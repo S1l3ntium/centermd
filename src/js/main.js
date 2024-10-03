@@ -64,3 +64,23 @@ new BurgerMenu().init();
 // 	defaultOpen: [], // [0,1]
 // 	collapsedClass: 'open',
 // });
+
+document.addEventListener("DOMContentLoaded", function () {
+	const selectElement = document.querySelector("select[name='type']");
+	const organizationField = document.querySelector(".feedback-form__form-item.organization");
+	const organizationInput = organizationField.querySelector("input");
+
+	selectElement.addEventListener("change", function () {
+		if (selectElement.value === "organization") {
+			// Показываем блок для организации
+			organizationField.style.display = "flex";
+			organizationInput.disabled = false;
+			organizationInput.hidden = false;
+		} else {
+			// Скрываем блок и отключаем input
+			organizationField.style.display = "none";
+			organizationInput.disabled = true;
+			organizationInput.hidden = true;
+		}
+	});
+});

@@ -8,9 +8,9 @@
   <title>Центр металлообработки деталей | О компании</title>
 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/main.min.css?_v=20241001111627">
+  <link rel="stylesheet" href="css/main.min.css?_v=20241004020214">
 
-  <script defer="defer" src="js/main.min.js?_v=20241001111627"></script>
+  <script defer="defer" src="js/main.min.js?_v=20241004020214"></script>
 </head>
 
 	<body>
@@ -74,8 +74,8 @@
 		</div>
 		<div class="hero__item">
 			<div class="hero__buttons">
-				<button class="details hero__buttons-item">Узнать подробнее</button>
-				<button class="details hero__buttons-item">Где нас найти</button>
+				<a href="/about.html#about-us" class="details hero__buttons-item">Узнать подробнее</a>
+				<a href="/about.html#map" class="details hero__buttons-item">Где нас найти</a>
 			</div>
 		</div>
 		<div class="hero__item">
@@ -100,12 +100,12 @@
 		<p>Металлообработка деталей любой сложности</p>
 	</div>
 </section>
- <section class="about-us">
+ <section class="about-us" id="about-us">
 	<div class="about-us__container">
 		<h1 class="about-us__title">Подробнее о нас</h1>
 		<div class="about-us__items">
 			<div class="about-us__item">
-				<picture><source srcset="images/all/IMG_4885.webp" type="image/webp"><img src="images/all/IMG_4885.jpg" alt="Подробнее о нас"></picture>
+				<picture><source srcset="images/all/img_4885.webp" type="image/webp"><img src="images/all/img_4885.jpg" alt="Подробнее о нас"></picture>
 			</div>
 			<div class="about-us__item">
 				<p>
@@ -227,7 +227,7 @@
 		
 	</div>
 </section>
- <section class="map">
+ <section class="map" id="map">
 	<div class="map__container">
 		<h1 class="map__title">Где мы находимся</h1>
 		<div class="map__body">
@@ -254,6 +254,10 @@
 						<option value="organization">Юридическое лицо</option>
 						<option value="personal">Физическое лицо</option>
 					</select>
+				</div>
+				<div class="feedback-form__form-item organization" style="display: none">
+					<label for="organization" class="feedback-form__form-item-label">Название организации</label>
+					<input type="text" class="feedback-form__form-item-input" name="organization" id="organization" placeholder="ООО «ЦМД»" disabled="disabled" hidden>
 				</div>
 				<div class="feedback-form__form-item">
 					<label for="name" class="feedback-form__form-item-label">Ваше имя</label>

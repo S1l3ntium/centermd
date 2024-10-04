@@ -99,11 +99,14 @@
 
 		svg {
 			cursor: pointer;
+			transition: var(--bs-transition);
 			circle {
 				fill: $colors-accent;
+				transition: var(--bs-transition);
 			}
 			path {
 				fill: $colors-white;
+				transition: var(--bs-transition);
 			}
 
 			&:hover {

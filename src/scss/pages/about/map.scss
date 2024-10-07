@@ -6,6 +6,10 @@
 	background-color: $colors-white-main;
 	width: 100%;
 
+	@include media-mx(767) {
+		padding-block: rem(36);
+	}
+
 	&__container {
 		display: flex;
 		flex-direction: column;
@@ -22,10 +26,20 @@
 		line-height: 120%;
 		text-align: center;
 		color: $colors-black;
+
+		@include media-mx(767) {
+			width: 100%;
+			text-align: center;
+			font-size: 24px;
+		}
 	}
 
 	&__body {
 		height: 650px;
 		width: 100%;
+
+		@include media-mx(767) {
+			height: 300px;
+		}
 	}
 }

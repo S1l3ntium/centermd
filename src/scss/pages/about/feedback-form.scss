@@ -7,7 +7,18 @@
 	background-image: url(@img/backgrounds/main-feedback-form.png);
 	background-position: bottom left;
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: 35%;
+	width: 100%;
+
+	@include media-mx(1199) {
+		background-size: 50%;
+	}
+
+	@include media-mx(767) {
+		padding-block: rem(36);
+		background-image: none;
+	}
+
 	width: 100%;
 
 	&__container {
@@ -33,6 +44,12 @@
 		text-align: center;
 		color: $colors-black;
 
+		@include media-mx(767) {
+			width: 100%;
+			text-align: center;
+			font-size: 24px;
+		}
+
 		&-sub {
 			font-family: $font-family;
 			font-weight: 400;
@@ -40,12 +57,22 @@
 			line-height: 100%;
 			text-align: center;
 			color: $colors-black;
+
+			@include media-mx(767) {
+				text-align: center;
+				font-size: 16px;
+			}
 		}
 	}
 
 	&__form {
 		width: 50%;
 		margin-left: auto;
+
+		@include media-mx(767) {
+			width: 100%;
+		}
+
 		&-items {
 			display: flex;
 			gap: rem(40);
@@ -75,6 +102,8 @@
 				background: $colors-white-main;
 
 				transition: all 0.3s ease-in-out;
+
+				border-radius: 0;
 
 				&::placeholder {
 					opacity: 0.2;
@@ -170,6 +199,10 @@
 						font-size: 14px;
 						line-height: 100%;
 						color: $colors-black;
+
+						@include media-mx(767) {
+							text-wrap: wrap;
+						}
 					}
 				}
 			}

@@ -58,6 +58,10 @@
 			position: relative;
 			padding-right: rem(120);
 
+			@include media-mx(767) {
+				font-size: 24px;
+			}
+
 			&::after {
 				content: "";
 				position: absolute;
@@ -79,6 +83,10 @@
 			font-size: 20px;
 			line-height: 120%;
 			color: $colors-white;
+
+			@include media-mx(767) {
+				font-size: 16px;
+			}
 		}
 
 		a {

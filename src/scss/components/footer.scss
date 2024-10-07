@@ -37,6 +37,10 @@
 					color: $colors-white;
 					font-size: 14px;
 					line-height: 120%;
+
+					@include media-mx(1199) {
+						font-size: 12px;
+					}
 				}
 			}
 
@@ -52,6 +56,10 @@
 				font-size: 14px;
 				color: $colors-white;
 				line-height: 120%;
+
+				@include media-mx(1199) {
+					font-size: 12px;
+				}
 			}
 		}
 

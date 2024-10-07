@@ -9,6 +9,11 @@
 	background-repeat: no-repeat;
 	width: 100%;
 
+	@include media-mx(767) {
+		padding-block: rem(18);
+		padding-top: rem(36);
+	}
+
 	&__container {
 		display: flex;
 		flex-direction: column;
@@ -25,6 +30,12 @@
 		line-height: 100%;
 		text-align: center;
 		color: $colors-black;
+
+		@include media-mx(767) {
+			width: 100%;
+			text-align: center;
+			font-size: 24px;
+		}
 	}
 
 	&__items {
@@ -33,6 +44,12 @@
 		align-items: stretch;
 		justify-content: center;
 		gap: rem(20);
+		height: 100%;
+		min-height: 450px;
+
+		@include media-mx(767) {
+			flex-direction: column;
+		}
 	}
 
 	&__item {
@@ -43,6 +60,12 @@
 		width: 50%;
 		position: relative;
 		overflow: hidden;
+
+		@include media-mx(767) {
+			flex: 100%;
+			width: 100%;
+			min-height: 300px;
+		}
 
 		img {
 			width: 100%;

@@ -12,6 +12,10 @@
 		// ..стили для липкого хедера
 		position: fixed;
 		background-color: $colors-black;
+
+		@include media-mx(767) {
+			block-size: rem($header-height - 50);
+		}
 	}
 
 	// .header__container
@@ -36,6 +40,10 @@
 					font-size: 14px;
 					line-height: 120%;
 					opacity: 0.5;
+
+					@include media-mx(1199) {
+						font-size: 12px;
+					}
 				}
 			}
 
@@ -46,6 +54,10 @@
 				line-height: 120%;
 				color: $colors-white;
 				opacity: 0.5;
+
+				@include media-mx(1199) {
+					font-size: 12px;
+				}
 			}
 
 			@include media-mx(767) {
@@ -65,6 +77,10 @@
 					color: $colors-white;
 					font-size: 16px;
 					line-height: 120%;
+
+					@include media-mx(1199) {
+						font-size: 14px;
+					}
 				}
 			}
 
@@ -74,6 +90,10 @@
 				font-size: 16px;
 				line-height: 120%;
 				color: $colors-white;
+
+				@include media-mx(1199) {
+					font-size: 14px;
+				}
 			}
 		}
 	}
@@ -107,16 +127,44 @@
 	}
 
 	.menu {
+		transition: var(--bs-transition);
+		.menu-open & {
+			@include media-mx(767) {
+				position: absolute;
+				display: flex;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				height: 100dvh;
+				//width: 100dvh;
+
+				background-color: $colors-black;
+			}
+		}
+
 		&__list {
 			display: flex;
 			flex-direction: row;
 			align-items: center;
 			gap: rem(50);
+
+			@include media-mx(767) {
+				width: 100%;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+			}
 		}
 		&__item {
 			height: 100%;
 			display: flex;
 			align-items: center;
+
+			@include media-mx(767) {
+				height: fit-content;
+			}
+
 			a.button {
 				border-radius: $radius-2;
 				padding: 20px;
@@ -148,6 +196,10 @@
 					line-height: 100%;
 					color: $colors-white;
 					height: 100%;
+
+					@include media-mx(1199) {
+						font-size: 14px;
+					}
 				}
 			}
 		}

@@ -16,6 +16,13 @@
 		align-items: center;
 		justify-content: space-between;
 		height: 100%;
+
+		@include media-mx(767) {
+			gap: rem(50);
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
 	}
 
 	&__item {
@@ -35,6 +42,13 @@
 			align-items: flex-end;
 		}
 
+		@include media-mx(767) {
+			&:first-child,
+			&:last-child {
+				flex: 1 1 100%;
+			}
+		}
+
 		&-title {
 			font-family: $second-family;
 			font-weight: 700;
@@ -43,6 +57,10 @@
 			color: $colors-white;
 			position: relative;
 			padding-right: rem(120);
+
+			@include media-mx(767) {
+				font-size: 24px;
+			}
 
 			&::after {
 				content: "";
@@ -65,6 +83,10 @@
 			font-size: 20px;
 			line-height: 120%;
 			color: $colors-white;
+
+			@include media-mx(767) {
+				font-size: 16px;
+			}
 		}
 
 		a {
@@ -88,6 +110,10 @@
 			&:hover {
 				color: $colors-white;
 				background: $colors-accent;
+			}
+
+			@include media-mx(767) {
+				width: 100%;
 			}
 		}
 	}
